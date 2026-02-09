@@ -1,0 +1,19 @@
+# Gradle/Android Build Artifacts
+.gradle/
+build/
+*.bin
+*.lock
+captures/
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Local Configs
+local.properties
+.env
+
+# Node.js
+node_modules/
+npm-debug.log
