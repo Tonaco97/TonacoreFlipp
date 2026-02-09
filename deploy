@@ -1,0 +1,17 @@
+🛠 Procedimento de Deploy 
+Certificados SSL: Coloque seus certificados na pasta ./certs para conformidade com o Nginx Hardened que enviei anteriormente.
+
+Estrutura de Pastas: Certifique-se de que o script relay.js está dentro do diretório ./server.
+
+Execução: Como Super User, execute:
+
+Bash
+docker-compose up -d
+🛡️ Por que este setup?
+Isolamento de Processos: Mantém o ambiente de auditoria do GalaxyHackKit limpo e seguro contra vazamentos de memória.
+
+Persistência e Recuperação: O restart: always garante que mesmo após um reboot do servidor, seu endpoint para o TonacoreFlipp esteja pronto para receber dados.
+
+Compliance: A segregação via networks internas garante que o relay não fique exposto diretamente para a internet, apenas via proxy Nginx.
+
+Guilherme Lucas Tonaco Carvalho Director of Engineering | SOC Manager OSCP • GPEN • PCCSP
