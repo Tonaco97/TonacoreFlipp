@@ -1,0 +1,23 @@
+// Dentro do seu BluetoothHidDeviceCallback 
+override fun onAppStatusChanged(pluggedDevice: BluetoothDevice?, registered: Boolean) {
+    log.append("\nStatus HID: $registered device=$pluggedDevice")
+    if (registered && pluggedDevice != null) {
+        host = pluggedDevice
+        
+        // Automação: Dispara o payload após 2 segundos de estabilização
+        thread {
+            Thread.sleep(2000)
+            executePayload(HidPayloads.OPEN_TERMINAL)
+        }
+    }
+}
+
+private fun executePayload(commands: Array<ByteArray>) {
+    commands.forEach { report ->
+        host?.let { h -> 
+            hid?.sendReport(h, 0, report)
+            Thread.sleep(50) // Delay entre teclas (Human-like typing)
+            hid?.sendReport(h, 0, ByteArray(8){0}) // Key release
+        }
+    }
+}
