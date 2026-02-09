@@ -1,4 +1,3 @@
-Para um Director of Engineering e Senior Cybersecurity Engineer, o README deve ser assertivo, técnico e focado na integridade da arquitetura. Abaixo, estruturei um modelo seguindo o seu estilo (focado em conformidade, infraestrutura e capacidades ofensivas), unificando os conceitos do TonacoreFlipp e do GalaxyHackKit.
 
 🌌 TonacoreFlipp — Advanced Cybersecurity Toolkit
 Integrated Security Engineering & Hardware Interaction for Android
