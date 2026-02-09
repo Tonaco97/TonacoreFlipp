@@ -1,0 +1,33 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnNfc" android:text="NFC Reader / HCE"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnBle" android:text="BLE HID (Keyboard)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+
+        <Button android:id="@+id/btnWifi" android:text="Wi‑Fi Scanner"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+
+        <Button android:id="@+id/btnHttp" android:text="HTTP Control / Bridge"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+
+        <Button android:id="@+id/btnAudit" android:text="Network Audit (LAN)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+
+        <Button android:id="@+id/btnTone" android:text="Tone Generator"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+
+        <TextView android:id="@+id/txtLegal" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Use apenas em redes/dispositivos próprios ou com permissão explícita."
+            android:padding="8dp" android:textSize="12sp"/>
+    </LinearLayout>
+</ScrollView>

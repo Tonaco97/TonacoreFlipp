@@ -1,0 +1,16 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText android:id="@+id/edtUrl" android:hint="http://192.168.1.10/relay/on"
+        android:inputType="textUri" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnSend" android:text="Enviar"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/txtResp" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="14sp" android:padding="8dp"/>
+    </ScrollView>
+</LinearLayout>
